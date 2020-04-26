@@ -1,0 +1,169 @@
+@font-face{
+    font-family: "dobkin plain macroman";
+    src:    url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.eot") format('eot'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.svg") format('svg'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.ttf") format('ttf'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.woff") format('woff');
+}
+
+
+header{
+    height: 260px;
+    background: url("img/banniere.jpg") no-repeat top center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.log{
+    width: 150px;
+}
+
+.logo{
+    height: 150px;
+}
+
+#title{
+    align-self: flex-end;
+}
+
+#titre{
+    margin: ;
+    font-family: "dobkin plain macroman";
+    font-size: 3em;
+    text-align: center;
+    font-variant: bold;
+    color: black;
+}
+
+body{
+    font-family: 'Source code pro',Calibri,serif; /*Changement de police*/
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffd18f;
+	margin-left : 175px;
+	margin-right : 175px;
+    /*Nos propre paramètre car parfois les sites ont des éléments prédéfinient -->*/
+}
+nav {
+    position:  40% 70%;
+    /*background-color: #088A29;*/
+    background-image: url("img/barre.jpg");
+    /*On va étirer lélément nav pour quil fasse toute la page et aussi changer la couleur de fond*/
+}
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+    /*Même chose mais pour les éléments ul cette fois*/
+    
+}
+
+nav > ul > li{
+    float: left; /*On cible les élemnts de Liste pour les mettre côte à côte*/
+    position: relative; /*On va attribuer au élement li une position relative pour positioner les sous-onglets sous les onglets*/
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
+    /*On va changer le padding et la couleur des liens des sous-onglets*/
+}
+nav > ul::after{
+    content:"";
+    display:block;
+    clear:both;
+    /*On veut rétablir la hauteur du Menu avec les sous-onglets*/
+}
+/*Quand nous passons la souris sur un des onglets tous ce décales à cause de la bordure alors pour régler cela il faut enlever le padding de la bordure au padding de la bordure totale cela va compenser.*/
+nav > ul >li:hover a{
+    padding: 15px 30px 20px 30px; /*On est obligé de mettre les 4 notations car on veut garder le même padding bas*/
+    
+}
+nav li{
+    list-style-type: none; /*Selectionne le type de liste*/
+}
+.submenu{
+    display: none; /*On va cacher les sous-onglets pour que ne les voient que quand on passe la souris dessus*/
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    /*on ve ajouter à nos lien une marge intérieur notamment changer le display de lelément a*/
+}
+nav li:hover .submenu{ /* on va modifier le style de notre menu pour que l'on voit les sous-onglets quand on passe la souris dessus*/
+    display: inline-block; /*afficher le menu*/
+    position: absolute;/* on veut que tout soit aligné*/
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000; /*Contenu s'affiche en bas de la page*/
+}
+.submenu li{ /* on ajoute une bordure à chaque sous-onglet*/
+    border-bottom: 1px solid #CCC;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+/*LE TRVAIL DE MAINTENANT VA CONSISTER A FAIRE UNE MISE EN FORME ESTHETIQUE DES ONGLETS DU MENU */
+.accueil:hover{
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);  
+}
+.menuQNS:hover{/*hover= quand l'utilisateur passe sa souris*/
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);    
+}
+.menuProduits:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuAteliers:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuRestauration:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuContact:hover{
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);    
+}
+.menuQNS .submenu{
+    background-color: #0B610B;
+    
+}
+.menuProduits .submenu{
+    background-color: #0B610B;
+}
+.menuAteliers .submenu{
+    background-color: #0B610B;
+}
+.menuRestauration .submenu{
+    background-color: #0B610B;
+}
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+
+
+footer{
+	background: url("img/footer.jpg");
+	display: flex;
+	justify-content: space-around;
+}
+
+.reseaux{
+	height: 50px;
+}

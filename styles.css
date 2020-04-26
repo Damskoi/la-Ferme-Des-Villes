@@ -1,0 +1,366 @@
+/* Les sélecteurs sont marqué une seule fois, mais ils peuvent être utilisés dans plusieurs pages. */
+	
+
+/*     ACCUEIL     */
+
+#intro{
+	font-size:1.3em;
+	 background-color: #FFF;
+	border: solid 3px;
+	border-color: #0B610B;
+	padding:1em;
+	
+}	
+		
+#imgacc{
+	width:95%;
+}
+
+#welcome{
+	text-align:center;
+	background-color: #0B610B;
+	width:100%;
+	border-radius: 40px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #D1D1D1;
+}	
+
+.green{
+	color:#0B610B;
+}
+
+
+
+/*     QUI SOMMES NOUS     */
+
+.aligne{
+    text-align: left;
+}
+.FPP{
+    background-color: #0B610B;
+    Padding: 20px;
+    font-family: Trebuchet MS,sherif;
+    border-radius: 10px;
+	text-align:center;
+	color:#FFF;
+}
+
+#ferme{
+		margin:6em;
+		width:70%; 
+		height:70%;
+}
+
+.text{
+		 font-family: Trebuchet MS,sherif;
+		 font-size:15px;
+		 text-align:left;
+}
+
+/*     NOS PRODUITS     */
+
+.produits{
+    background-repeat:repeat-x;
+    background-color: #0B610B;
+    Padding: 20px;
+    font-family: Trebuchet MS,sherif;
+    border-radius: 10px;
+    color:#FFF;
+}
+.imgprod{
+    width: 300px;
+    height: 200px;
+}
+
+#picpresent {
+    width: 100%;
+    height: 100%px;
+}
+
+#description {
+		font-family: Trebuchet MS,sherif;
+		text-align: center;
+		font-size : 22px;
+}
+
+.titreproduit{
+	text-align: center;
+	font-size: 20px;
+}
+
+/*     ATELIERS     */
+
+
+#introatel{	 
+	margin-left:12em;
+	margin-right:12em;
+	 font-family: Trebuchet MS,sherif;
+	 font-size:16px;
+}
+
+#tablatel{
+	text-align:center;
+	font-family: Trebuchet MS,sherif;
+	font-size:16px;
+	margin-left: auto;
+    margin-right: auto;
+}
+#imgatel{
+	height: 500px;
+	width:1100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atelim{
+	padding-right: 4em;
+	padding-top:1em;
+	font-size:18px;
+}
+.atel{
+	width: 400px;
+	height:300px;
+	border:solid 3px black;
+
+}
+
+/*     RESTAURATION     */
+
+#futur{
+		text-align:center;
+}
+.resto{
+	 text-align:center;
+	 font-family: Trebuchet MS,sherif;
+	 font-size:16px;
+ }
+ 
+ #recrut{
+	 font-weight:bold;
+ }
+ 
+ 
+ /*     RECRUTEMENT     */
+
+ 
+ /*     CONTACT     */
+ 
+ #formm{
+  margin: 30px;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #04B404;
+  border-radius: 1em;
+}
+
+.formul{
+  margin-top: 1em;
+ 
+}
+
+#textcon{
+	 text-align:center;
+	 font-family: Trebuchet MS,sherif;
+	 font-size:16px;
+}
+
+
+.labelcontact{
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+
+.inputform{
+  font: 15px sans-serif;
+  width: 400px;
+  box-sizing: border-box;
+  border: 1px solid ##2E2E2E;
+}
+
+
+#message {
+  vertical-align: top;
+  height: 15em;
+  width: 400px;
+  resize: vertical;
+}
+
+.button {
+  padding-left: 100px; 
+}
+
+
+
+/*     HEADER ET FOOTER     */
+
+@font-face{
+    font-family: "dobkin plain macroman";
+    src:    url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.eot") format('eot'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.svg") format('svg'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.ttf") format('ttf'),
+            url("web_fonts/dobkin_plain_macroman/DobkinPlain-webfont.woff") format('woff');
+}
+
+
+header{
+    height: 260px;
+    background: url("img/banniere.jpg") no-repeat top center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.log{
+    width: 150px;
+}
+
+.logo{
+    height: 150px;
+}
+
+#title{
+    align-self: flex-end;
+}
+
+#titre{
+    margin: ;
+    font-family: "dobkin plain macroman";
+    font-size: 3em;
+    text-align: center;
+    font-variant: bold;
+    color: black;
+}
+
+body{
+    font-family: 'Source code pro',Calibri,serif; /*Changement de police*/
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffd18f;
+	margin-left : 175px;
+	margin-right : 175px;
+    /*Nos propre paramètre car parfois les sites ont des éléments prédéfinient -->*/
+}
+nav {
+    position:  40% 70%;
+    /*background-color: #088A29;*/
+    background-image: url("img/barre.jpg");
+    /*On va étirer lélément nav pour quil fasse toute la page et aussi changer la couleur de fond*/
+}
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+    /*Même chose mais pour les éléments ul cette fois*/
+    
+}
+
+nav > ul > li{
+    float: left; /*On cible les élemnts de Liste pour les mettre côte à côte*/
+    position: relative; /*On va attribuer au élement li une position relative pour positioner les sous-onglets sous les onglets*/
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
+    /*On va changer le padding et la couleur des liens des sous-onglets*/
+}
+nav > ul::after{
+    content:"";
+    display:block;
+    clear:both;
+    /*On veut rétablir la hauteur du Menu avec les sous-onglets*/
+}
+/*Quand nous passons la souris sur un des onglets tous ce décales à cause de la bordure alors pour régler cela il faut enlever le padding de la bordure au padding de la bordure totale cela va compenser.*/
+nav > ul >li:hover a{
+    padding: 15px 30px 20px 30px; /*On est obligé de mettre les 4 notations car on veut garder le même padding bas*/
+    
+}
+nav li{
+    list-style-type: none; /*Selectionne le type de liste*/
+}
+.submenu{
+    display: none; /*On va cacher les sous-onglets pour que ne les voient que quand on passe la souris dessus*/
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    /*on ve ajouter à nos lien une marge intérieur notamment changer le display de lelément a*/
+}
+nav li:hover .submenu{ /* on va modifier le style de notre menu pour que l'on voit les sous-onglets quand on passe la souris dessus*/
+    display: inline-block; /*afficher le menu*/
+    position: absolute;/* on veut que tout soit aligné*/
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000; /*Contenu s'affiche en bas de la page*/
+}
+.submenu li{ /* on ajoute une bordure à chaque sous-onglet*/
+    border-bottom: 1px solid #CCC;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+/*LE TRVAIL DE MAINTENANT VA CONSISTER A FAIRE UNE MISE EN FORME ESTHETIQUE DES ONGLETS DU MENU */
+.accueil:hover{
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);  
+}
+.menuQNS:hover{/*hover= quand l'utilisateur passe sa souris*/
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);    
+}
+.menuProduits:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuAteliers:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuRestauration:hover{
+    border-top: 5px solid #0B610B;
+    background-color: RGBa(288, 77, 38, 0.15);    
+}
+.menuContact:hover{
+    border-top: 5px solid #0B610B;
+    background-color: rgba(288, 77, 38, 0.15);    
+}
+.menuQNS .submenu{
+    background-color: #0B610B;
+    
+}
+.menuProduits .submenu{
+    background-color: #0B610B;
+}
+.menuAteliers .submenu{
+    background-color: #0B610B;
+}
+.menuRestauration .submenu{
+    background-color: #0B610B;
+}
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+
+
+footer{
+	background: url("img/footer.jpg");
+	display: flex;
+	justify-content: space-around;
+}
+
+.reseaux{
+	height: 50px;
+}
